@@ -107,7 +107,6 @@ input[type=number] {
   outline: none;
   border: none;
   border-radius: 5px;
-  cursor: text;
   padding-right: 0.5rem;
 }
 

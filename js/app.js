@@ -24,9 +24,6 @@ const renderAll = () => {
         // -- Calculate currency amount
         amountTwoEl.value = (currentRate * amountOneEl.value).toFixed(2);
     })
-
-    
-    
 }
 
 
@@ -35,6 +32,11 @@ currencyOneEl.addEventListener('change', renderAll)
 currencyTwoEl.addEventListener('change', renderAll)
 amountOneEl.addEventListener('input', renderAll)
 amountTwoEl.addEventListener('input', renderAll)
-swapEl.addEventListener('click', renderAll)
+swapEl.addEventListener('click', () => {
+    let temp = currencyOneEl.value;
+    currencyOneEl.value = currencyTwoEl.value;
+    currencyTwoEl.value = temp;
+    renderAll();
+})
 
 renderAll()
