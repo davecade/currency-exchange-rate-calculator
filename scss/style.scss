@@ -54,6 +54,7 @@ input[type=number] {
     width: $app-width;
     margin: 0 auto;
     height: 100vh;
+    padding: 0 3rem;
 }
 
 .app-container {
@@ -157,7 +158,8 @@ input[type=number] {
 }
 
 // -- Media Queries
-@media(max-width: 500px) {
+
+@media(max-width: 700px) {
     .container {
         padding: 8rem 3rem;
         height: 100%;
