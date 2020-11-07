@@ -164,6 +164,13 @@ input[type=number] {
         width: 500px;
     }
 
+    .currency {
+        #amount-one,
+        #amount-two {
+            width: 50%;
+        }
+    }
+
     #swap-section {
         #rate {
             font-size: 1rem;
