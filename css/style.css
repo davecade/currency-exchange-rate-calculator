@@ -1,1 +1,142 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.container, .app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #080861d7;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+section {
+  width: 100%;
+}
+
+::placeholder {
+  color: inherit;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.app-container {
+  background: #080861;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.48);
+  width: 60%;
+}
+
+#header .logo-app {
+  height: 130px;
+  width: 130px;
+  margin-bottom: 1rem;
+}
+
+#header h1 {
+  color: #9393f3;
+}
+
+#header p {
+  font-size: 1.1rem;
+  margin: 1rem 0 4rem 0;
+}
+
+.currency {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.currency #currency-one,
+.currency #currency-two,
+.currency #amount-one,
+.currency #amount-two {
+  padding: .5rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #ffffffda;
+  color: #000;
+  text-align: right;
+}
+
+.currency #currency-one:hover,
+.currency #currency-two:hover,
+.currency #amount-one:hover,
+.currency #amount-two:hover {
+  opacity: 0.9;
+}
+
+.currency #currency-one,
+.currency #currency-two {
+  padding-right: .5rem;
+  cursor: pointer;
+}
+
+.currency #amount-one,
+.currency #amount-two {
+  width: 30%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: text;
+}
+
+.currency #currency-two, .currency #amount-two {
+  margin-bottom: 2rem;
+}
+
+#swap-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#swap-section #swap {
+  background-color: #080861;
+  padding: .5rem 2.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+}
+
+#swap-section #swap:hover {
+  opacity: 0.9;
+  color: #9393f3;
+}
+
+#swap-section #rate {
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=style.css.map */

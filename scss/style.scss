@@ -1,3 +1,158 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 // Variables
-$wesbsite-width: 1000px;
-$main-color: #9694c8;
+$app-width: 1000px;
+$main-color: #9393f3;
+$website-bg: #080861d7;
+$app-bg: #080861;
+
+// Utilities
+%flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+// Main Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $website-bg;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+section {
+    width: 100%;
+}
+
+::placeholder {
+    color: inherit;
+  }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container {
+    @extend %flex;
+    width: $app-width;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.app-container {
+    @extend %flex;
+    background: $app-bg;
+    border-radius: 10px;
+    padding: 2rem;
+    -webkit-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.48);
+    box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.48);
+    width: 60%;
+}
+
+// Header
+#header {
+
+    .logo-app {
+        height: 130px;
+        width: 130px;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        color: $main-color;
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin: 1rem 0 4rem 0;
+    }
+}
+
+.currency {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+
+    #currency-one,
+    #currency-two,
+    #amount-one,
+    #amount-two {
+        padding: .5rem 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: #ffffffda;
+        color: #000;
+        text-align: right;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    #currency-one,
+    #currency-two {
+        padding-right: .5rem;
+        cursor: pointer;
+        
+    }
+
+    #amount-one,
+    #amount-two {
+        width: 30%;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: text;
+    }
+
+    #currency-two, #amount-two {
+        margin-bottom: 2rem;
+    }
+
+}
+
+#swap-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+    #swap {
+        background-color: $app-bg;
+        padding: .5rem 2.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 2rem;
+        color: #fff;
+
+        &:hover {
+            opacity: 0.9;
+            color: $main-color;
+        }
+    }
+
+    #rate {
+        font-size: 1.2rem;
+    }
+}
