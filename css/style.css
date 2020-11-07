@@ -14,7 +14,7 @@
 }
 
 body {
-  background-color: #080861d7;
+  background-color: #080861a6;
   color: #fff;
   font-family: 'Lato', sans-serif;
 }
@@ -108,6 +108,7 @@ input[type=number] {
   border: none;
   border-radius: 5px;
   cursor: text;
+  padding-right: 0.5rem;
 }
 
 .currency #currency-two, .currency #amount-two {

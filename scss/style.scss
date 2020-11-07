@@ -4,7 +4,7 @@
 // Variables
 $app-width: 1000px;
 $main-color: #9393f3;
-$website-bg: #080861d7;
+$website-bg: #080861a6;
 $app-bg: #080861;
 
 // Utilities
@@ -123,6 +123,7 @@ input[type=number] {
         border: none;
         border-radius: 5px;
         cursor: text;
+        padding-right: 0.5rem;
     }
 
     #currency-two, #amount-two {
